@@ -1,0 +1,237 @@
+public class Alphabetical {
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		char ch = 'A';
+
+		for (int i = 0; i <= 4; i++) {
+
+		for (int j = 0; j <= i; j++) {
+
+			System.out.print(ch++);}
+
+		System.out.println();
+
+		}
+
+	}
+
+}
+
+output:
+
+A
+BC
+DEF
+GHIJ
+KLMNO
+
+******************
+******************
+
+
+public class BOX_pattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<4;i++)
+		{
+		for(int j=0;j<4;j++)
+		{
+		if(i==0||j==0||j==3||i==3)
+		{
+		System.out.print("*");
+		}
+		else
+		{
+		System.out.print(" ");
+		}
+		}
+		System.out.println();
+		}
+
+	}
+
+
+	}
+
+  output:
+****
+*  *
+*  *
+****
+
+***************
+***************
+
+
+import java.util.Scanner;
+
+public class pattern1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Scanner sc = new Scanner(System.in);
+		    System.out.println("Enter the number of rows: ");
+		    int rows = 5, k = 0;
+
+		    for (int i = 1; i <= rows; ++i, k = 0) {
+		      for (int space = 1; space <= rows - i; ++space) {
+		        System.out.print("  ");
+		      }
+
+		      while (k != 2 * i - 1) {
+		        System.out.print("* "); 
+		        ++k;
+		      }
+
+		      System.out.println();
+		    }
+
+
+	}
+
+}
+
+output:
+Enter the number of rows: 
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+
+*******************
+*******************
+
+
+
+
+import java.util.Scanner;
+
+public class verify_ROI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner (System.in);
+
+		System.out.println("Enter age");
+		int age = sc.nextInt();
+
+		System.out.println("Enter gender: M/F");
+		int gender = sc.next().charAt(0);
+
+		if(gender == 'F') 
+		{
+			if(age >= 60) 
+			{
+				System.out.println("Rate of interrest=7.5%");
+			}
+			else if( age <60 ) 
+			{
+				System.out.println("Rate of interrest=5%");
+			}
+		}
+		if(gender == 'M')
+		{
+			if(age >= 60) 
+			{
+				System.out.println("Rate of interrest=7%");
+			}
+			else if( age <60 ) 
+			{
+				System.out.println("Rate of interrest=5%");
+			}
+		else 
+		{
+			System.out.println("ERROR");
+		}
+
+	}
+
+	}
+
+}
+
+output:
+
+Enter age
+20
+Enter gender: M/F
+
+female
+
+****************
+****************
+
+public class number_pattern {
+
+
+
+		public static void main(String[] args) 
+		{
+			// TODO Auto-generated method stub
+			int i,j;
+			for(i=1;i<=5;i++)
+			{
+				for(j=4;j>=i;j--)
+				{
+					System.out.print(" ");	
+				}
+				for(j=1;j<=i;j++)
+				{
+						if(j%2==0)
+						{
+							System.out.print("0");
+						}
+						else
+						{
+							System.out.print("1");
+						}
+				}
+				System.out.println();
+			}	
+		}
+	}
+
+  output:
+
+   1
+   10
+  101
+ 1010
+10101
+
+*********************
+*********************
+
+
+public class PATTERN {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=5;i>=1;i--)
+		{
+			for(int j=5;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+			for (int j=1;j<=(2*i-1);j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+
+output:
+
+*********
+ *******
+  *****
+   ***
+    *
+
